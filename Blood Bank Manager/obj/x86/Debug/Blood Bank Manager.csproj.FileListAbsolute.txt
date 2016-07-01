@@ -1,0 +1,17 @@
+C:\Users\User\AppData\Local\Temporary Projects\Blood Bank Manager\bin\Debug\Blood Bank Manager.exe
+C:\Users\User\AppData\Local\Temporary Projects\Blood Bank Manager\bin\Debug\Blood Bank Manager.pdb
+C:\Users\User\AppData\Local\Temporary Projects\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.MainForm.resources
+C:\Users\User\AppData\Local\Temporary Projects\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.Properties.Resources.resources
+C:\Users\User\AppData\Local\Temporary Projects\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.csproj.GenerateResource.Cache
+C:\Users\User\AppData\Local\Temporary Projects\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.exe
+C:\Users\User\AppData\Local\Temporary Projects\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.pdb
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.exe
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.pdb
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\bin\Debug\Blood Bank Manager.exe
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\bin\Debug\Blood Bank Manager.pdb
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.MainForm.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.Properties.Resources.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.csproj.GenerateResource.Cache
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.HomeUC.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.AddDonorUC.resources
