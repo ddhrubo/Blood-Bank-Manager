@@ -25,6 +25,8 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menu_panel = new System.Windows.Forms.Panel();
+            this.search_stock_button = new System.Windows.Forms.Button();
+            this.search_donor_button = new System.Windows.Forms.Button();
             this.add_donor_button = new System.Windows.Forms.Button();
             this.home_button = new System.Windows.Forms.Button();
             this.logo_panel = new System.Windows.Forms.Panel();
@@ -44,6 +46,8 @@
             // menu_panel
             // 
             this.menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.menu_panel.Controls.Add(this.search_stock_button);
+            this.menu_panel.Controls.Add(this.search_donor_button);
             this.menu_panel.Controls.Add(this.add_donor_button);
             this.menu_panel.Controls.Add(this.home_button);
             this.menu_panel.Controls.Add(this.logo_panel);
@@ -53,6 +57,40 @@
             this.menu_panel.Name = "menu_panel";
             this.menu_panel.Size = new System.Drawing.Size(200, 618);
             this.menu_panel.TabIndex = 0;
+            // 
+            // search_stock_button
+            // 
+            this.search_stock_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.search_stock_button.FlatAppearance.BorderSize = 0;
+            this.search_stock_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.search_stock_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_stock_button.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.search_stock_button.Image = ((System.Drawing.Image)(resources.GetObject("search_stock_button.Image")));
+            this.search_stock_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.search_stock_button.Location = new System.Drawing.Point(0, 263);
+            this.search_stock_button.Name = "search_stock_button";
+            this.search_stock_button.Size = new System.Drawing.Size(200, 58);
+            this.search_stock_button.TabIndex = 4;
+            this.search_stock_button.Text = "Search Stock";
+            this.search_stock_button.UseVisualStyleBackColor = true;
+            this.search_stock_button.Click += new System.EventHandler(this.search_stock_button_Click);
+            // 
+            // search_donor_button
+            // 
+            this.search_donor_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.search_donor_button.FlatAppearance.BorderSize = 0;
+            this.search_donor_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.search_donor_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search_donor_button.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.search_donor_button.Image = ((System.Drawing.Image)(resources.GetObject("search_donor_button.Image")));
+            this.search_donor_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.search_donor_button.Location = new System.Drawing.Point(0, 205);
+            this.search_donor_button.Name = "search_donor_button";
+            this.search_donor_button.Size = new System.Drawing.Size(200, 58);
+            this.search_donor_button.TabIndex = 3;
+            this.search_donor_button.Text = "Search Donor";
+            this.search_donor_button.UseVisualStyleBackColor = true;
+            this.search_donor_button.Click += new System.EventHandler(this.search_donor_button_Click);
             // 
             // add_donor_button
             // 
@@ -137,9 +175,10 @@
             // page_title
             // 
             this.page_title.AutoSize = true;
+            this.page_title.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.page_title.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.page_title.ForeColor = System.Drawing.SystemColors.Control;
-            this.page_title.Location = new System.Drawing.Point(67, 47);
+            this.page_title.Location = new System.Drawing.Point(0, 47);
             this.page_title.Name = "page_title";
             this.page_title.Size = new System.Drawing.Size(120, 42);
             this.page_title.TabIndex = 2;
@@ -220,6 +259,8 @@
         private System.Windows.Forms.Button home_button;
         private System.Windows.Forms.Button add_donor_button;
         private System.Windows.Forms.Panel base_panel;
+        private System.Windows.Forms.Button search_donor_button;
+        private System.Windows.Forms.Button search_stock_button;
 
 
     }

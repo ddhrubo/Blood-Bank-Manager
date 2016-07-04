@@ -15,3 +15,7 @@ C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Ban
 C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood Bank Manager.csprojResolveAssemblyReference.cache
 C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.HomeUC.resources
 C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.AddDonorUC.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.SearchDonorUC.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.DonorInfoForm.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.SearchStockUC.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.DonorSearchResultUC.resources

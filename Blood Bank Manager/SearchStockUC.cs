@@ -8,26 +8,20 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace Blood_Bank_Manager {
-    public partial class AddDonorUC : UserControl {
-        public AddDonorUC() {
+    public partial class SearchStockUC : UserControl {
+        public SearchStockUC() {
             InitializeComponent();
         }
 
         // To make sure only one instance is created
-        private static AddDonorUC _instance;
-        public static AddDonorUC Instance {
+        private static SearchStockUC _instance;
+        public static SearchStockUC Instance {
             get {
                 if (_instance == null) {
-                    _instance = new AddDonorUC();
+                    _instance = new SearchStockUC();
                 }
                 return _instance;
             }
         }
-
-        private void add_donor_button_Click(object sender, EventArgs e) {
-            new DonorInfoForm().Show();
-        }
-
-        
     }
 }
