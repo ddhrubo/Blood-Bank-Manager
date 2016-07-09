@@ -19,3 +19,5 @@ C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Ban
 C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.DonorInfoForm.resources
 C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.SearchStockUC.resources
 C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.DonorSearchResultUC.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.UserControl1.resources
+C:\Users\User\documents\visual studio 2010\Projects\Blood Bank Manager\Blood Bank Manager\obj\x86\Debug\Blood_Bank_Manager.CircularProgressBar.resources

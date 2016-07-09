@@ -29,7 +29,7 @@ namespace Blood_Bank_Manager {
         }
         private void load_HomeUC() {
             // Title change
-            page_title.Text = "Home";
+            page_title.Text = "Dashboard";
             // load UC
             if (!base_panel.Controls.Contains(HomeUC.Instance)) {
                 base_panel.Controls.Add(HomeUC.Instance);
@@ -136,7 +136,7 @@ namespace Blood_Bank_Manager {
         }
         private void title_panel_MouseMove(object sender, MouseEventArgs e) {
             if (toMove == 1) {
-                this.SetDesktopLocation(MousePosition.X - valX - 200, MousePosition.Y - valY);
+                this.SetDesktopLocation(MousePosition.X - valX-200, MousePosition.Y - valY);
             }
         }
       
@@ -151,9 +151,19 @@ namespace Blood_Bank_Manager {
         }
         void change_menu_button_color(object sender) {
             foreach (Button button in menu_buttons) {
-                button.BackColor = Color.FromArgb(44,62,80);
+                button.BackColor = Color.FromArgb(53,57,66);
             }
-            (sender as Button).BackColor = Color.FromArgb(52, 152, 219);
+            (sender as Button).BackColor = Color.FromArgb(150,37,67);
+        }
+
+        // Windows XP style drop shadow
+        private const int CS_DROPSHADOW = 0x00020000;
+        protected override CreateParams CreateParams {
+            get {
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DROPSHADOW;
+                return cp;
+            }
         }
     }
 }

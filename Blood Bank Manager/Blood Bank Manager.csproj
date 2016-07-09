@@ -53,6 +53,12 @@
     <Compile Include="AddDonorUC.Designer.cs">
       <DependentUpon>AddDonorUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="CircularProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CircularProgressBar.Designer.cs">
+      <DependentUpon>CircularProgressBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="DonorInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,8 +98,17 @@
     <Compile Include="SearchStockUC.Designer.cs">
       <DependentUpon>SearchStockUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddDonorUC.resx">
       <DependentUpon>AddDonorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CircularProgressBar.resx">
+      <DependentUpon>CircularProgressBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DonorInfoForm.resx">
       <DependentUpon>DonorInfoForm.cs</DependentUpon>
@@ -121,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SearchStockUC.resx">
       <DependentUpon>SearchStockUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
