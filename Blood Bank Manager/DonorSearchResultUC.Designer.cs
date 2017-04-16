@@ -24,7 +24,9 @@
         /// </summary>
         private void InitializeComponent() {
             this.label2 = new System.Windows.Forms.Label();
-            this.back_button = new System.Windows.Forms.Button();
+            this.resultGridView = new System.Windows.Forms.DataGridView();
+            this.tag_out = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.resultGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -34,33 +36,43 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.label2.Location = new System.Drawing.Point(16, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 25);
+            this.label2.Size = new System.Drawing.Size(138, 25);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Donor search results:";
+            this.label2.Text = "Search tags:";
             // 
-            // back_button
+            // resultGridView
             // 
-            this.back_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.back_button.FlatAppearance.BorderSize = 0;
-            this.back_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.back_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.back_button.Location = new System.Drawing.Point(693, 463);
-            this.back_button.Name = "back_button";
-            this.back_button.Size = new System.Drawing.Size(100, 51);
-            this.back_button.TabIndex = 22;
-            this.back_button.Text = "Back";
-            this.back_button.UseVisualStyleBackColor = false;
-            this.back_button.Click += new System.EventHandler(this.back_button_Click);
+            this.resultGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.resultGridView.Location = new System.Drawing.Point(0, 91);
+            this.resultGridView.Name = "resultGridView";
+            this.resultGridView.ReadOnly = true;
+            this.resultGridView.Size = new System.Drawing.Size(808, 438);
+            this.resultGridView.TabIndex = 6;
+            this.resultGridView.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.resultGridView_CellMouseDoubleClick);
+            // 
+            // tag_out
+            // 
+            this.tag_out.AutoSize = true;
+            this.tag_out.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tag_out.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.tag_out.Location = new System.Drawing.Point(160, 35);
+            this.tag_out.Name = "tag_out";
+            this.tag_out.Size = new System.Drawing.Size(138, 25);
+            this.tag_out.TabIndex = 7;
+            this.tag_out.Text = "Search tags:";
             // 
             // DonorSearchResultUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.back_button);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.tag_out);
+            this.Controls.Add(this.resultGridView);
             this.Controls.Add(this.label2);
             this.Name = "DonorSearchResultUC";
             this.Size = new System.Drawing.Size(808, 529);
+            ((System.ComponentModel.ISupportInitialize)(this.resultGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,6 +81,8 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button back_button;
+        private System.Windows.Forms.DataGridView resultGridView;
+        private System.Windows.Forms.Label tag_out;
+
     }
 }

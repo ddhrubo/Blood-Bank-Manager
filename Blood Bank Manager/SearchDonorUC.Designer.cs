@@ -25,24 +25,25 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchDonorUC));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.name_in = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.bg_in = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.area_in = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.name_box = new System.Windows.Forms.CheckBox();
+            this.bg_box = new System.Windows.Forms.CheckBox();
+            this.area_box = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.search_button = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.id_in = new System.Windows.Forms.TextBox();
+            this.id_box = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.show_unavailable_box = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,15 +57,15 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Name";
             // 
-            // textBox1
+            // name_in
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(149, 262);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(213, 19);
-            this.textBox1.TabIndex = 2;
+            this.name_in.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
+            this.name_in.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.name_in.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_in.Location = new System.Drawing.Point(149, 262);
+            this.name_in.Name = "name_in";
+            this.name_in.Size = new System.Drawing.Size(213, 19);
+            this.name_in.TabIndex = 2;
             // 
             // label4
             // 
@@ -76,15 +77,15 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Blood Group";
             // 
-            // comboBox1
+            // bg_in
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.bg_in.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
+            this.bg_in.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bg_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bg_in.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bg_in.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
+            this.bg_in.FormattingEnabled = true;
+            this.bg_in.Items.AddRange(new object[] {
             "A+",
             "A-",
             "B+",
@@ -93,10 +94,10 @@
             "AB-",
             "O+",
             "O-"});
-            this.comboBox1.Location = new System.Drawing.Point(149, 317);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 7;
+            this.bg_in.Location = new System.Drawing.Point(149, 317);
+            this.bg_in.Name = "bg_in";
+            this.bg_in.Size = new System.Drawing.Size(121, 28);
+            this.bg_in.TabIndex = 7;
             // 
             // label6
             // 
@@ -108,16 +109,16 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Area";
             // 
-            // comboBox2
+            // area_in
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
-            this.comboBox2.DropDownHeight = 300;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.IntegralHeight = false;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.area_in.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
+            this.area_in.DropDownHeight = 300;
+            this.area_in.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.area_in.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.area_in.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
+            this.area_in.FormattingEnabled = true;
+            this.area_in.IntegralHeight = false;
+            this.area_in.Items.AddRange(new object[] {
             "Adabor",
             "Agargaon",
             "Badda",
@@ -160,10 +161,10 @@
             "Turag",
             "Uttar Khan",
             "Uttara"});
-            this.comboBox2.Location = new System.Drawing.Point(149, 372);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(213, 28);
-            this.comboBox2.TabIndex = 11;
+            this.area_in.Location = new System.Drawing.Point(149, 372);
+            this.area_in.Name = "area_in";
+            this.area_in.Size = new System.Drawing.Size(213, 28);
+            this.area_in.TabIndex = 11;
             // 
             // panel1
             // 
@@ -173,59 +174,59 @@
             this.panel1.Size = new System.Drawing.Size(1, 201);
             this.panel1.TabIndex = 14;
             // 
-            // checkBox2
+            // name_box
             // 
-            this.checkBox2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.checkBox2.FlatAppearance.BorderSize = 0;
-            this.checkBox2.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.checkBox2.Location = new System.Drawing.Point(403, 257);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(90, 30);
-            this.checkBox2.TabIndex = 15;
-            this.checkBox2.Text = "use name";
-            this.checkBox2.UseVisualStyleBackColor = false;
+            this.name_box.Appearance = System.Windows.Forms.Appearance.Button;
+            this.name_box.AutoSize = true;
+            this.name_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.name_box.FlatAppearance.BorderSize = 0;
+            this.name_box.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.name_box.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.name_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.name_box.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_box.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.name_box.Location = new System.Drawing.Point(403, 257);
+            this.name_box.Name = "name_box";
+            this.name_box.Size = new System.Drawing.Size(90, 30);
+            this.name_box.TabIndex = 15;
+            this.name_box.Text = "use name";
+            this.name_box.UseVisualStyleBackColor = false;
             // 
-            // checkBox1
+            // bg_box
             // 
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.checkBox1.FlatAppearance.BorderSize = 0;
-            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.checkBox1.Location = new System.Drawing.Point(403, 315);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(90, 30);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "use BG";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.bg_box.Appearance = System.Windows.Forms.Appearance.Button;
+            this.bg_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.bg_box.FlatAppearance.BorderSize = 0;
+            this.bg_box.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.bg_box.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.bg_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bg_box.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bg_box.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bg_box.Location = new System.Drawing.Point(403, 315);
+            this.bg_box.Name = "bg_box";
+            this.bg_box.Size = new System.Drawing.Size(90, 30);
+            this.bg_box.TabIndex = 16;
+            this.bg_box.Text = "use BG";
+            this.bg_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bg_box.UseVisualStyleBackColor = false;
             // 
-            // checkBox3
+            // area_box
             // 
-            this.checkBox3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.checkBox3.FlatAppearance.BorderSize = 0;
-            this.checkBox3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.checkBox3.Location = new System.Drawing.Point(403, 370);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(90, 30);
-            this.checkBox3.TabIndex = 17;
-            this.checkBox3.Text = "use area";
-            this.checkBox3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox3.UseVisualStyleBackColor = false;
+            this.area_box.Appearance = System.Windows.Forms.Appearance.Button;
+            this.area_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.area_box.FlatAppearance.BorderSize = 0;
+            this.area_box.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.area_box.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.area_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.area_box.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.area_box.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.area_box.Location = new System.Drawing.Point(403, 370);
+            this.area_box.Name = "area_box";
+            this.area_box.Size = new System.Drawing.Size(90, 30);
+            this.area_box.TabIndex = 17;
+            this.area_box.Text = "use area";
+            this.area_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.area_box.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -267,7 +268,7 @@
             this.search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.search_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_button.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.search_button.Location = new System.Drawing.Point(678, 453);
+            this.search_button.Location = new System.Drawing.Point(284, 427);
             this.search_button.Name = "search_button";
             this.search_button.Size = new System.Drawing.Size(100, 51);
             this.search_button.TabIndex = 21;
@@ -285,33 +286,33 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "Donor ID";
             // 
-            // textBox2
+            // id_in
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(149, 204);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(213, 19);
-            this.textBox2.TabIndex = 23;
+            this.id_in.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
+            this.id_in.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.id_in.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_in.Location = new System.Drawing.Point(149, 204);
+            this.id_in.Name = "id_in";
+            this.id_in.Size = new System.Drawing.Size(213, 19);
+            this.id_in.TabIndex = 23;
             // 
-            // checkBox4
+            // id_box
             // 
-            this.checkBox4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
-            this.checkBox4.FlatAppearance.BorderSize = 0;
-            this.checkBox4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-            this.checkBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.checkBox4.Location = new System.Drawing.Point(403, 199);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(90, 30);
-            this.checkBox4.TabIndex = 24;
-            this.checkBox4.Text = "use ID";
-            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox4.UseVisualStyleBackColor = false;
+            this.id_box.Appearance = System.Windows.Forms.Appearance.Button;
+            this.id_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.id_box.FlatAppearance.BorderSize = 0;
+            this.id_box.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.id_box.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.id_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.id_box.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id_box.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.id_box.Location = new System.Drawing.Point(403, 199);
+            this.id_box.Name = "id_box";
+            this.id_box.Size = new System.Drawing.Size(90, 30);
+            this.id_box.TabIndex = 24;
+            this.id_box.Text = "use ID";
+            this.id_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.id_box.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
@@ -335,30 +336,49 @@
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
             // 
+            // show_unavailable_box
+            // 
+            this.show_unavailable_box.Appearance = System.Windows.Forms.Appearance.Button;
+            this.show_unavailable_box.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.show_unavailable_box.FlatAppearance.BorderSize = 0;
+            this.show_unavailable_box.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.show_unavailable_box.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.show_unavailable_box.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.show_unavailable_box.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.show_unavailable_box.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.show_unavailable_box.Location = new System.Drawing.Point(403, 427);
+            this.show_unavailable_box.Name = "show_unavailable_box";
+            this.show_unavailable_box.Size = new System.Drawing.Size(236, 30);
+            this.show_unavailable_box.TabIndex = 60;
+            this.show_unavailable_box.Text = "Show unavailable donors also";
+            this.show_unavailable_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.show_unavailable_box.UseVisualStyleBackColor = false;
+            // 
             // SearchDonorUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.show_unavailable_box);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.id_box);
+            this.Controls.Add(this.id_in);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.search_button);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.area_box);
+            this.Controls.Add(this.bg_box);
+            this.Controls.Add(this.name_box);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.area_in);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.bg_in);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.name_in);
             this.Name = "SearchDonorUC";
             this.Size = new System.Drawing.Size(808, 529);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -370,23 +390,24 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox name_in;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox bg_in;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox area_in;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox name_box;
+        private System.Windows.Forms.CheckBox bg_box;
+        private System.Windows.Forms.CheckBox area_box;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button search_button;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.TextBox id_in;
+        private System.Windows.Forms.CheckBox id_box;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.CheckBox show_unavailable_box;
     }
 }

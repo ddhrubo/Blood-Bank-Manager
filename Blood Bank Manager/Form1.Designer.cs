@@ -25,6 +25,8 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menu_panel = new System.Windows.Forms.Panel();
+            this.about_us_button = new System.Windows.Forms.Button();
+            this.date_range_search_button = new System.Windows.Forms.Button();
             this.search_stock_button = new System.Windows.Forms.Button();
             this.search_donor_button = new System.Windows.Forms.Button();
             this.add_donor_button = new System.Windows.Forms.Button();
@@ -49,17 +51,59 @@
             // menu_panel
             // 
             this.menu_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(57)))), ((int)(((byte)(66)))));
+            this.menu_panel.Controls.Add(this.about_us_button);
+            this.menu_panel.Controls.Add(this.date_range_search_button);
             this.menu_panel.Controls.Add(this.search_stock_button);
             this.menu_panel.Controls.Add(this.search_donor_button);
             this.menu_panel.Controls.Add(this.add_donor_button);
             this.menu_panel.Controls.Add(this.home_button);
             this.menu_panel.Controls.Add(this.logo_panel);
             this.menu_panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menu_panel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu_panel.Location = new System.Drawing.Point(0, 0);
             this.menu_panel.Name = "menu_panel";
             this.menu_panel.Size = new System.Drawing.Size(200, 603);
             this.menu_panel.TabIndex = 0;
+            // 
+            // about_us_button
+            // 
+            this.about_us_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.about_us_button.FlatAppearance.BorderSize = 0;
+            this.about_us_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(37)))), ((int)(((byte)(67)))));
+            this.about_us_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.about_us_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.about_us_button.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.about_us_button.Image = ((System.Drawing.Image)(resources.GetObject("about_us_button.Image")));
+            this.about_us_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.about_us_button.Location = new System.Drawing.Point(0, 401);
+            this.about_us_button.Name = "about_us_button";
+            this.about_us_button.Size = new System.Drawing.Size(200, 58);
+            this.about_us_button.TabIndex = 6;
+            this.about_us_button.Text = "   About Us";
+            this.about_us_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.about_us_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.about_us_button.UseVisualStyleBackColor = true;
+            this.about_us_button.Click += new System.EventHandler(this.about_us_button_Click);
+            // 
+            // date_range_search_button
+            // 
+            this.date_range_search_button.Dock = System.Windows.Forms.DockStyle.Top;
+            this.date_range_search_button.FlatAppearance.BorderSize = 0;
+            this.date_range_search_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(37)))), ((int)(((byte)(67)))));
+            this.date_range_search_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.date_range_search_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_range_search_button.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.date_range_search_button.Image = ((System.Drawing.Image)(resources.GetObject("date_range_search_button.Image")));
+            this.date_range_search_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.date_range_search_button.Location = new System.Drawing.Point(0, 343);
+            this.date_range_search_button.Name = "date_range_search_button";
+            this.date_range_search_button.Size = new System.Drawing.Size(200, 58);
+            this.date_range_search_button.TabIndex = 5;
+            this.date_range_search_button.Text = "   Date Range Search";
+            this.date_range_search_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.date_range_search_button.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.date_range_search_button.UseVisualStyleBackColor = true;
+            this.date_range_search_button.Click += new System.EventHandler(this.date_range_search_button_Click);
             // 
             // search_stock_button
             // 
@@ -67,7 +111,7 @@
             this.search_stock_button.FlatAppearance.BorderSize = 0;
             this.search_stock_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(37)))), ((int)(((byte)(67)))));
             this.search_stock_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search_stock_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_stock_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_stock_button.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.search_stock_button.Image = ((System.Drawing.Image)(resources.GetObject("search_stock_button.Image")));
             this.search_stock_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -87,7 +131,7 @@
             this.search_donor_button.FlatAppearance.BorderSize = 0;
             this.search_donor_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(37)))), ((int)(((byte)(67)))));
             this.search_donor_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search_donor_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_donor_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_donor_button.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.search_donor_button.Image = ((System.Drawing.Image)(resources.GetObject("search_donor_button.Image")));
             this.search_donor_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,7 +151,7 @@
             this.add_donor_button.FlatAppearance.BorderSize = 0;
             this.add_donor_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(37)))), ((int)(((byte)(67)))));
             this.add_donor_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.add_donor_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_donor_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_donor_button.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.add_donor_button.Image = ((System.Drawing.Image)(resources.GetObject("add_donor_button.Image")));
             this.add_donor_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,7 +171,7 @@
             this.home_button.FlatAppearance.BorderSize = 0;
             this.home_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(37)))), ((int)(((byte)(67)))));
             this.home_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home_button.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.home_button.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.home_button.Image = ((System.Drawing.Image)(resources.GetObject("home_button.Image")));
             this.home_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -165,11 +209,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(35, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 24);
+            this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Blood Bank";
             // 
@@ -234,11 +278,11 @@
             // page_title
             // 
             this.page_title.AutoSize = true;
-            this.page_title.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.page_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.page_title.ForeColor = System.Drawing.Color.White;
             this.page_title.Location = new System.Drawing.Point(17, 23);
             this.page_title.Name = "page_title";
-            this.page_title.Size = new System.Drawing.Size(143, 30);
+            this.page_title.Size = new System.Drawing.Size(131, 29);
             this.page_title.TabIndex = 2;
             this.page_title.Text = "Dashboard";
             // 
@@ -263,6 +307,7 @@
             this.Controls.Add(this.menu_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.menu_panel.ResumeLayout(false);
             this.logo_panel.ResumeLayout(false);
@@ -292,6 +337,8 @@
         private System.Windows.Forms.Button search_donor_button;
         private System.Windows.Forms.Button search_stock_button;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button date_range_search_button;
+        private System.Windows.Forms.Button about_us_button;
 
 
     }

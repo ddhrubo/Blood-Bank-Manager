@@ -35,6 +35,7 @@ namespace Blood_Bank_Manager {
                 base_panel.Controls.Add(HomeUC.Instance);
                 HomeUC.Instance.Dock = DockStyle.Fill;
             }
+            HomeUC.Instance.bindUI();
             HomeUC.Instance.BringToFront();
         }
 
@@ -95,19 +96,56 @@ namespace Blood_Bank_Manager {
             SearchStockUC.Instance.BringToFront();
         }
 
-        /* Donor Search Result UC load indirect */
-        private void load_DonorSearchResultUC() {
+        // Date range search
+        private void date_range_search_button_Click(object sender, EventArgs e) {
+            // Menu buttons' color change
+            change_menu_button_color(sender);
+            // Load Date range search UC
+            load_DateRangeSearch();
+        }
+        private void load_DateRangeSearch() {
             // Title change
-            page_title.Text = "Search Donor";
+            page_title.Text = "Search In Range";
+            // load UC
+            if (!base_panel.Controls.Contains(DateRangeSearch.Instance)) {
+                base_panel.Controls.Add(DateRangeSearch.Instance);
+                DateRangeSearch.Instance.Dock = DockStyle.Fill;
+            }
+            DateRangeSearch.Instance.BringToFront();
+        }
+
+        /* Donor Search Result UC load indirect */
+        private void load_DonorSearchResultUC(DataSet dataset,string qryString) {
+            // Title change
+            page_title.Text = "Donor Search Result";
             // load UC
             if (!base_panel.Controls.Contains(DonorSearchResultUC.Instance)) {
                 base_panel.Controls.Add(DonorSearchResultUC.Instance);
                 DonorSearchResultUC.Instance.Dock = DockStyle.Fill;
             }
+            DonorSearchResultUC.Instance.ResultDataSet = dataset;
+            DonorSearchResultUC.Instance.SearchQueryString = qryString;
             DonorSearchResultUC.Instance.BringToFront();
         }
-        public void goToDonorSearchResultPage() {
-            load_DonorSearchResultUC();
+        public void goToDonorSearchResultPage(DataSet dataset,string qryString) {
+            load_DonorSearchResultUC(dataset,qryString);
+        }
+
+        /* Stock Search Result UC load indirect */
+        private void load_StockSearchResultUC(DataSet dataset,string qryString) {
+            // Title change
+            page_title.Text = "Blood Bag Stock Search Result";
+            // load UC
+            if (!base_panel.Controls.Contains(StockSearchResultUC.Instance)) {
+                base_panel.Controls.Add(StockSearchResultUC.Instance);
+                StockSearchResultUC.Instance.Dock = DockStyle.Fill;
+            }
+            StockSearchResultUC.Instance.ResultDataSet = dataset;
+            StockSearchResultUC.Instance.SearchQueryString = qryString;
+            StockSearchResultUC.Instance.BringToFront();
+        }
+        public void goToStockSearchResultPage(DataSet dataset,string qryString) {
+            load_StockSearchResultUC(dataset,qryString);
         }
 
         /*
@@ -148,6 +186,7 @@ namespace Blood_Bank_Manager {
             menu_buttons.Add(add_donor_button);
             menu_buttons.Add(search_donor_button);
             menu_buttons.Add(search_stock_button);
+            menu_buttons.Add(date_range_search_button);
         }
         void change_menu_button_color(object sender) {
             foreach (Button button in menu_buttons) {
@@ -164,6 +203,14 @@ namespace Blood_Bank_Manager {
                 cp.ClassStyle |= CS_DROPSHADOW;
                 return cp;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            new DonorTable().Show();
+        }
+
+        private void about_us_button_Click(object sender, EventArgs e) {
+            new AboutUs().Show();
         }
     }
 }
